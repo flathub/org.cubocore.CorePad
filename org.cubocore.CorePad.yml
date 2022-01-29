@@ -28,7 +28,7 @@ modules:
     sources:
       - type: git
         url: https://gitlab.com/cubocore/libcprime.git
-        tag: v4.2.0
+        tag: v4.3.0
   - name: corepad
     post-install:
       - install -Dp -m 644 org.cubocore.CorePad.appdata.xml /app/share/appdata/org.cubocore.CorePad.appdata.xml
@@ -42,5 +42,5 @@ modules:
         path: org.cubocore.CorePad.appdata.xml
       - type: git
         url: https://gitlab.com/cubocore/coreapps/corepad.git
-        tag: v4.2.0
+        tag: v4.3.0
 
