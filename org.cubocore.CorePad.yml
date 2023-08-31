@@ -8,6 +8,7 @@ finish-args:
   - --socket=fallback-x11
   - --socket=wayland
   - --filesystem=home # For accessing any text file from user directory
+  - --filesystem=xdg-config
   - --device=dri
   - --talk-name=org.freedesktop.Notifications
 cleanup:
@@ -28,7 +29,7 @@ modules:
     sources:
       - type: git
         url: https://gitlab.com/cubocore/libcprime.git
-        tag: v4.4.1
+        tag: v4.5.0
   - name: corepad
     post-install:
       - install -Dp -m 644 org.cubocore.CorePad.appdata.xml /app/share/appdata/org.cubocore.CorePad.appdata.xml
@@ -42,4 +43,4 @@ modules:
         path: org.cubocore.CorePad.appdata.xml
       - type: git
         url: https://gitlab.com/cubocore/coreapps/corepad.git
-        tag: v4.4.0
+        tag: v4.5.0
