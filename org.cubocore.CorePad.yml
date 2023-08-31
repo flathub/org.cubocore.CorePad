@@ -8,7 +8,7 @@ finish-args:
   - --socket=fallback-x11
   - --socket=wayland
   - --filesystem=home # For accessing any text file from user directory
-  - --filesystem=xdg-config
+  - --filesystem=xdg-config:create
   - --device=dri
   - --talk-name=org.freedesktop.Notifications
 cleanup:
