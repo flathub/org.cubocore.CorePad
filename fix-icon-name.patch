@@ -1,0 +1,32 @@
+--- a/cc.cubocore.CorePad.desktop
++++ b/cc.cubocore.CorePad.desktop
+@@ -5,4 +5,4 @@
+ Exec=corepad %F
+-Icon=cc.cubocore.CorePad
++Icon=org.cubocore.CorePad
+ Type=Application
+ Categories=Qt;Utility;TextEditor;X-CSuite;
+--- a/src/main.cpp
++++ b/src/main.cpp
+@@ -32,5 +32,5 @@
+ #include "corepad.h"
+ 
+-const QString appID = QStringLiteral(APP_ID);
++const QString appID = QStringLiteral("org.cubocore.CorePad");
+ 
+ int main(int argc, char *argv[])
+--- a/cc.cubocore.CorePad.metainfo.xml
++++ b/cc.cubocore.CorePad.metainfo.xml
+@@ -4,4 +4,4 @@
+ <component type="desktop-application">
+-    <id>cc.cubocore.CorePad</id>
++    <id>org.cubocore.CorePad</id>
+ 
+     <metadata_license>CC0-1.0</metadata_license>
+@@ -11,5 +11,5 @@
+     <developer_name>CuboCore Group</developer_name>
+ 
+-    <launchable type="desktop-id">cc.cubocore.CorePad.desktop</launchable>
++    <launchable type="desktop-id">org.cubocore.CorePad.desktop</launchable>
+ 
+     <name>CorePad</name>
